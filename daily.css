@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,577;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-size: 75%;
+  scroll-behavior: smooth; }
+
+body {
+  letter-spacing: 1px;
+  height: 100%;
+  margin: 0;
+  font-family: "Playfair Display";
+  background-color: white;
+  background-image: url("assets/gray-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.logo-img {
+  width: 155px;
+  height: 110px; }
+
+.quotes-bg {
+  background-image: url("assets/bg-wood.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.nav-links {
+  align-items: center; }
+  .nav-links a {
+    color: lightgrey;
+    font-size: 16px;
+    text-decoration: none; }
+
+.navbar-container {
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: space-around;
+  z-index: 9; }
+
+.active a {
+  color: #efc21c; }
+
+.active {
+  color: #efc21c; }
+
+.container-100vh {
+  height: 100vh;
+  background-image: url("assets/bg-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; }
+
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+
+.jumbo-text-container h1 {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  font-size: 60px;
+  z-index: 3;
+  font-family: "Playfair Display";
+  text-align: center;
+  width: 100%; }
+.jumbo-text-container p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  z-index: 3;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  text-shadow: black 0px 0px 5px; }
+
+.jumbo-button-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+  width: 100%;
+  text-align: center; }
+  .jumbo-button-container a {
+    color: white;
+    font-size: 34px;
+    text-decoration: none;
+    background-color: #efc21c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    text-shadow: gray 0px 0px 7px; }
+
+.img-clau {
+  width: 100%;
+  height: auto; }
+
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  margin-bottom: 50px; }
+
+.chef-title {
+  font-family: "Playfair Display";
+  color: white;
+  font-size: 48px;
+  letter-spacing: 7.2px;
+  margin-bottom: 20px; }
+
+.chef-description {
+  font-family: "Roboto";
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center; }
+
+.award {
+  color: #efc21c; }
+
+.chef-text {
+  align-self: center;
+  display: flex;
+  flex-direction: column; }
+
+.owl-carousel {
+  width: 80%;
+  margin: 0 auto; }
+
+.owl-nav .owl-prev {
+  color: white !important;
+  font-size: 60px !important;
+  background: none !important;
+  margin-right: 190px !important; }
+
+.owl-nav .owl-next {
+  color: white !important;
+  font-size: 60px !important;
+  background: none !important; }
+
+.item-carousel-text {
+  text-align: center;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 30px; }
+
+.carousel-title {
+  color: black;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 12px; }
+
+.carousel-price {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px; }
+
+.carousel-slider-header {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 2rem;
+  padding-top: 8rem;
+  font-family: "Playfair Display"; }
+
+.mustard {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.mustard-about {
+  display: flex;
+  height: 100%;
+  width: 25%;
+  position: relative;
+  left: 0;
+  margin-bottom: 30px; }
+
+.orders {
+  color: white;
+  text-align: center;
+  font-size: 40px; }
+
+.orders-phone {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 80px; }
+
+.footer-adress-container {
+  text-align: center; }
+  .footer-adress-container img {
+    width: 135px;
+    height: 115px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  .footer-adress-container p {
+    font-size: 14px; }
+
+.footer-wrapper {
+  justify-content: space-evenly;
+  color: white;
+  margin-bottom: 30px; }
+
+.footer-text {
+  margin-top: 40px; }
+  .footer-text h2 {
+    font-size: 24px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .footer-text p {
+    font-size: 13px;
+    font-family: "Playfair Display"; }
+  .footer-text h2,
+  .footer-text p {
+    text-align: center;
+    padding-left: 30px;
+    max-width: 320px; }
+
+.footer-hours {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px; }
+  .footer-hours h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Playfair Display";
+    margin-bottom: 20px !important; }
+  .footer-hours p {
+    font-size: 15px;
+    font-family: "Playfair Display"; }
+  .footer-hours h2,
+  .footer-hours p {
+    margin: 0 auto; }
+
+.bold {
+  font-weight: bold; }
+
+.days p {
+  font-weight: bold; }
+
+.hours-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+
+.vl {
+  border-left: 1px solid #efc21c;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0; }
+
+.vl-wrapper {
+  position: relative; }
+
+.catalin {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-bottom: 1rem; }
+
+iframe {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 3rem; }
+
+/*# sourceMappingURL=daily.css.map */
