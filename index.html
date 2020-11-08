@@ -14,11 +14,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
+    <link rel="stylesheet" href="cssanimation\cssanimation.min.css">
+    <link href="Hover-master\css\hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="daily.css">
     <title>Daily World | Restaurant</title>
 </head>
 
 <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
     <div class="container-100vh">
         <div class="dark-overlay">
             <div class="container-fluid d-flex navbar-container pb-3 pt-3">
@@ -26,27 +31,32 @@
                     <a href="#"> <img src="assets\logo.png" class="logo-img" alt="Daily World Logo"></a>
                 </div>
                 <div class="nav-wrapper  d-inline-flex">
-                    <ul class="nav-links d-flex">
+                    <div class="container-hamburger icon" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+                    <ul class="nav-links">
                         <li class="nav-link active"><a href="#"> Home</a></li>
                         <li class="nav-link"><a href="#">Menu</a></li>
                         <li class="nav-link"><a href="#">Gallery</a></li>
                         <li class="nav-link"><a href="#">About</a></li>
                         <li class="nav-link"><a href="#">Contact</a></li>
                     </ul>
+
                 </div>
             </div>
         </div>
         <div class="jumbo-text-container">
-            <h1>Welcome to Dely World</h1>
-            <p>BY CLAUDIO COSTEA</p>
+            <h1 class="cssanimation leFadeIn sequence">Welcome to Dely World</h1>
+            <p class="cssanimation leFadeInBottom sequence">BY CLAUDIO COSTEA</p>
         </div>
         <div class="jumbo-button-container">
-            <a href="#">Order takeaway now</a>
+            <a href="#" class="hvr-grow">Order takeaway now <i class="fas fa-angle-right"></i></a>
         </div>
     </div>
 
 
-    <div class="">
         <div class="container-fluid">
             <h1 class="carousel-slider-header">Our Delycious menu</h1>
             <img src="assets\mustard.png" alt="" class="mustard">
@@ -167,13 +177,44 @@
             </div>
         </div>
     </div>
-    </div>
     
+
+
+    <div class="container-fluid services">
+        <div class="row services-wrapper">
+            <div class="col-6 col-md-2 services-item"> 
+                <img src="assets\fast-time.svg" alt="">
+                <h2>Fast Delivery</h2>
+                <div class="underline"></div>
+                <p>Everything you order at Dely World will be quickly delivered to your door.</p>
+            </div>
+            <div class="col-6 col-md-2 services-item"> 
+                <img src="assets\diet.svg" alt="">
+                <h2>Fresh Food</h2>
+                <div class="underline"></div>
+                <p>We use only the best ingredients to cook the tasty fresh food for you.</p>
+            </div>
+            <div class="col-6 col-md-2 services-item"> 
+                <img src="assets\chef.svg" alt="">
+                <h2>Experienced chefs</h2>
+                <div class="underline"></div>
+                <p>Our staff consists of chefs and cooks with years of experience.</p>
+            </div>
+            <div class="col-6 col-md-2 services-item"> 
+                <img src="assets\wedding-dinner.svg" alt="">
+                <h2>A variety of dishes</h2>
+                <div class="underline"></div>
+                <p>In our menu you’ll find a wide variety of dishes, desserts, and drinks.</p>
+            </div>
+        </div>
+    </div>
+
+
 
         <div class="container-fluid container-about">
 
             <div class="row about-wrapper">
-                <div class="col-3 chef-text">
+                <div class="col-12 col-md-6 col-lg-3 chef-text">
                     <h1 class="chef-title">Chef's <br> Quotes</h1>
                     <img src="assets\mustard.png" alt="" class="mustard-about">
                     <p class="chef-description">Dely World is a unique place where the food becomes magic in the hands
@@ -191,9 +232,8 @@
                         more
                         of the array of flavours we are offering you at Dely World Food.</p>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-3">
-                    <img src="assets\clau.jpg" class="img-clau" alt="">
+                <div class="col-8 col-md-6 col-lg-3">
+                    <img src="assets\clau.jpg" class="img-clau img-fluid" alt="">
                     <p class="chef-description mt-2"><i class="fas fa-medal fa-2x mr-2 mt-1 award"></i> Chef Claudio
                         Costea
                     </p>
@@ -205,7 +245,7 @@
         <div class="container-fluid order-now">
             <div>
                 <h1 class="orders">Orders & Pickup availible at:</h1>
-                <h2 class="orders-phone"><i class="fas fa-phone mr-2
+                <h2 class="orders-phone hvr-icon-buzz-out"><i class="fas fa-phone mr-2 hvr-icon
             mb-5 mt-5 award"></i> 0774-628-382</h2>
             </div>
         </div>
@@ -220,7 +260,7 @@
     <div class="gray-bg">
         <div class="contact-container container-fluid">
             <div class="row d-flex footer-wrapper">
-                <div class="col-3 footer-text">
+                <div class="col-12 col-sm-3 footer-text">
                     <h2>Dely World</h2>
                     <p>Dely World is a unique place where the food becomes magic in the hands of our Chef patron Claudio
                         Costea, with over 20 years of experience from street restaurants, cruise ships, Michelin star
@@ -230,7 +270,7 @@
                     <div class="vl"></div>
                 </div>
 
-                <div class="col-3 footer-adress-container">
+                <div class="col-12 col-sm-3 footer-adress-container">
                     <img src="assets\logo.png" alt="" class="footer-logo">
                     <p class="footer-adress">44 Canal Center Plaza #200, Alexandria,
                         VA 22314, USA</p>
@@ -240,7 +280,7 @@
                 <div class="col-1 vl-wrapper">
                     <div class="vl"></div>
                 </div>
-                <div class="col-3 footer-hours">
+                <div class="col-12 col-sm-3 footer-hours">
                     <h2>Opening hour</h2>
                     <div class="hours-wrapper">
                         <div class="days">
@@ -277,6 +317,7 @@
     <script src="script.js"></script>
     <script src="OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/ea147e9837.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="cssanimation\letteranimation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
