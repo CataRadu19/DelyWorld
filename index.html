@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
     <link rel="stylesheet" href="cssanimation\cssanimation.min.css">
+    <link href="lightbox2-2.11.3\lightbox2-2.11.3\dist\css\lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="Hover-master\css\hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="daily.css">
-    <title>Daily World | Restaurant</title>
+    <title>Dely World | Restaurant</title>
 </head>
 
 <body>
@@ -37,11 +39,11 @@
                         <div class="bar3"></div>
                       </div>
                     <ul class="nav-links">
-                        <li class="nav-link active"><a href="#"> Home</a></li>
-                        <li class="nav-link"><a href="#">Menu</a></li>
-                        <li class="nav-link"><a href="#">Gallery</a></li>
-                        <li class="nav-link"><a href="#">About</a></li>
-                        <li class="nav-link"><a href="#">Contact</a></li>
+                        <li class="nav-link active"><a href="index.html"> Home</a></li>
+                        <li class="nav-link"><a href="menu.html">Menu</a></li>
+                        <li class="nav-link"><a href="gallery.html">Gallery</a></li>
+                        <li class="nav-link"><a href="#about">About</a></li>
+                        <li class="nav-link"><a href="#contact">Contact</a></li>
                     </ul>
 
                 </div>
@@ -52,7 +54,7 @@
             <p class="cssanimation leFadeInBottom sequence">BY CLAUDIO COSTEA</p>
         </div>
         <div class="jumbo-button-container">
-            <a href="#" class="hvr-grow">Order takeaway now <i class="fas fa-angle-right"></i></a>
+            <a href="menu.html #menu" class="hvr-grow">Order takeaway now <i class="fas fa-angle-right"></i></a>
         </div>
     </div>
 
@@ -62,8 +64,8 @@
             <img src="assets\mustard.png" alt="" class="mustard">
         </div>
 
-        <div class="owl-carousel owl-theme">
-            <div class="item">
+        <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
+            <div class="item hvr hvr-float">
                 <img src="assets\food1.jpg" alt="">
                 <div class="item-carousel-text">
                     <p class="carousel-title">Food name</p>
@@ -77,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item hvr hvr-float">
                 <img src="assets\food1.jpg" alt="">
                 <div class="item-carousel-text">
                     <p class="carousel-title">Food name</p>
@@ -91,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item hvr hvr-float">
                 <img src="assets\food1.jpg" alt="">
                 <div class="item-carousel-text">
                     <p class="carousel-title">Food name</p>
@@ -105,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item hvr hvr-float">
                 <img src="assets\food1.jpg" alt="">
                 <div class="item-carousel-text">
                     <p class="carousel-title">Food name</p>
@@ -119,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item hvr hvr-float">
                 <img src="assets\food1.jpg" alt="">
                 <div class="item-carousel-text">
                     <p class="carousel-title">Food name</p>
@@ -133,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item hvr hvr-float">
                 <img src="assets\food1.jpg" alt="">
                 <div class="item-carousel-text">
                     <p class="carousel-title">Food name</p>
@@ -147,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item hvr hvr-float">
                 <img src="assets\food1.jpg" alt="">
                 <div class="item-carousel-text">
                     <p class="carousel-title">Food name</p>
@@ -161,7 +163,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item hvr hvr-float">
                 <img src="assets\food1.jpg" alt="">
                 <div class="item-carousel-text">
                     <p class="carousel-title">Food name</p>
@@ -180,7 +182,7 @@
     
 
 
-    <div class="container-fluid services">
+    <div class="container-fluid services" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
         <div class="row services-wrapper">
             <div class="col-6 col-md-2 services-item"> 
                 <img src="assets\fast-time.svg" alt="">
@@ -211,9 +213,9 @@
 
 
 
-        <div class="container-fluid container-about">
+        <div class="container-fluid container-about" id="about">
 
-            <div class="row about-wrapper">
+            <div class="row about-wrapper" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">
                 <div class="col-12 col-md-6 col-lg-3 chef-text">
                     <h1 class="chef-title">Chef's <br> Quotes</h1>
                     <img src="assets\mustard.png" alt="" class="mustard-about">
@@ -242,11 +244,11 @@
         </div>
 
 
-        <div class="container-fluid order-now">
+        <div class="container-fluid order-now" data-aos="zoom-in" data-aos-duration="500" data-aos-offset="200">
             <div>
                 <h1 class="orders">Orders & Pickup availible at:</h1>
                 <h2 class="orders-phone hvr-icon-buzz-out"><i class="fas fa-phone mr-2 hvr-icon
-            mb-5 mt-5 award"></i> 0774-628-382</h2>
+            mb-5 mt-5 award"></i> <a href="tel:123-456-7890">0774-628-382</a></h2>
             </div>
         </div>
     </div>
@@ -257,7 +259,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79041.62410696276!2d-1.3176273823884421!3d51.75039548703286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48713380adc41faf%3A0xc820dba8cb547402!2sOxford%2C%20Regatul%20Unit!5e0!3m2!1sro!2sro!4v1604665564797!5m2!1sro!2sro"
         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-    <div class="gray-bg">
+    <div class="gray-bg" id="contact">
         <div class="contact-container container-fluid">
             <div class="row d-flex footer-wrapper">
                 <div class="col-12 col-sm-3 footer-text">
@@ -314,7 +316,13 @@
 
     </div>
 
+
+
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script>
     <script src="https://kit.fontawesome.com/ea147e9837.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="cssanimation\letteranimation.js"></script>
@@ -324,6 +332,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
         integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
     </script>
+    <script src="lightbox2-2.11.3\lightbox2-2.11.3\dist\js\lightbox.js"></script>
 </body>
 
 </html>

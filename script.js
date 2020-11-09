@@ -3,6 +3,11 @@ $(document).ready(function() {
       e.preventDefault();
       $(this).parent().find('.dropdown-menu').slideToggle();
     });
+    
+  lightbox.option({
+    'disableScrolling': true,
+    'positionFromTop': 200
+  })
     $('.owl-carousel').owlCarousel({
       loop:true,
       margin:10,
@@ -64,3 +69,4 @@ function topFunction() {
   $(".container-hamburger").click(function(){
     $(".nav-links").toggle();
   });
+
