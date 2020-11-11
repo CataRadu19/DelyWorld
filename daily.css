@@ -293,13 +293,16 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: flex-start; }
 
 .menu-item {
   display: flex;
   flex-direction: row;
   color: white;
   margin-bottom: 30px; }
+
+.jumbo-button-container .order-now {
+  margin-top: 0; }
 
 .menu-text-wrapper {
   display: flex;
@@ -617,5 +620,10 @@ iframe {
 
 *:focus {
   outline: none !important; }
+
+.word-break {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word; }
 
 /*# sourceMappingURL=daily.css.map */
