@@ -430,7 +430,9 @@ iframe {
   cursor: pointer;
   margin-top: 20px; }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #efc21c;
@@ -555,7 +557,8 @@ iframe {
     flex-direction: column;
     align-items: center; }
 
-  .footer-text h2, .footer-text p {
+  .footer-text h2,
+  .footer-text p {
     padding-left: 0; }
 
   .footer-adress-container {
@@ -611,5 +614,8 @@ iframe {
 .mustard {
   margin-top: 2rem;
   margin-bottom: 22px; }
+
+*:focus {
+  outline: none !important; }
 
 /*# sourceMappingURL=daily.css.map */

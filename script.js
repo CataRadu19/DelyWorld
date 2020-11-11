@@ -69,4 +69,3 @@ function topFunction() {
   $(".container-hamburger").click(function(){
     $(".nav-links").toggle();
   });
-
