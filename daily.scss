@@ -73,10 +73,11 @@ $base-color: #efc21c;
     align-items: center;
     a {
         color: lightgrey;
-        font-size: 16px;
+        font-size: 17px;
         text-decoration: none;
     }
 }
+
 .navbar-container {
     background: rgba(0, 0, 0, 0.7);
     justify-content: space-around;
@@ -106,7 +107,6 @@ $base-color: #efc21c;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
 }
 .jumbo-text-container {
     h1 {
